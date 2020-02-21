@@ -2,7 +2,10 @@
 
 Shared content repository for 2020-02 SaCon NYC edition of "Design and Build Great Web APIs" 
 
-## The Book
+#### SACon NYC
+Here's the landing page for this workshop at the O'Reilly SACon web site: https://conferences.oreilly.com/software-architecture/sa-ny/public/schedule/detail/79966
+
+#### The Book
 This workshop is based on the upcoming eponymous book from Pragmatic Publishing. You can download excerpts and sign up for the early release project at the book's home page here: https://pragprog.com/book/maapis/design-and-build-great-web-apis
 
 ## General Topic Outline
@@ -71,4 +74,8 @@ While, you can enjoy the workshop without having to do hands-on coding/design wo
    * https://dashboard.heroku.com/apps
    * install Heroku CLI
    * https://devcenter.heroku.com/articles/heroku-cli
+
+## Slides
+TK
+
    
