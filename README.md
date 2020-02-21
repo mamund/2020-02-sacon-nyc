@@ -37,22 +37,35 @@ All the working examples will be derived from the following projects. NOTE: The 
 ## Tools
 While, you can enjoy the workshop without having to do hands-on coding/design work, haveg a few tools on hand can enhance the experience. Below are the tools used to put together the workshop. The items w/ an asterisk (*) indicate online tools that offer free online accounts
 
- * Favorite code editor
+ * Your Favorite code editor
  * Git & Github (*)
    * install local git tooling 
+   * https://git-scm.com/
    * set up git push/pull for Github
+   * https://github.com/
  * WebSequenceDiagrams.com (*)
    * online-only tool
+   * https://WebSequenceDiagrams.com
  * Apiary API Markdown (*)
    * online-only tool
+   * https://app.apiary.io
  * SwaggerHub OpenAPI Editor (*)
    * online-only tool
+   * https://app.swaggerhub.com/home
  * NodeJS & npm
    * install NodeJS & npm
+   * https://nodejs.org/en/
  * Postman.com for testing (*)
    * install Postman client
+   * https://www.postman.com/
+   * install newman CLI for Postman
+   * https://www.npmjs.com/package/newman
  * Auth0 for security (*)
    * online-only tool
+   * https://manage.auth0.com/dashboard
  * Heroku for deployment (*)
+   * register at Heroku for deployment
+   * https://dashboard.heroku.com/apps
    * install Heroku CLI
+   * https://devcenter.heroku.com/articles/heroku-cli
    
