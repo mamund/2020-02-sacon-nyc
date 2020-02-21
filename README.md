@@ -1,6 +1,9 @@
 # 2020-02-sacon-nyc
 
-Shared content repository for 2020-02 SaCon NYC edition of "Design and Build Great APIs" 
+Shared content repository for 2020-02 SaCon NYC edition of "Design and Build Great Web APIs" 
+
+## The Book
+This workshop is based on the upcoming eponymous book from Pragmatic Publishing. You can download excerpts and sign up for the early release project at the book's home page here: https://pragprog.com/book/maapis/design-and-build-great-web-apis
 
 ## General Topic Outline
 Below is the big-picture outline of the morning workshop. We'll see working examples of each step in the process along with exerecises for select parts of the outline.
