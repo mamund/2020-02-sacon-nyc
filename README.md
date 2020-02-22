@@ -20,14 +20,14 @@ Below is the big-picture outline of the morning workshop. We'll see working exam
  * Record Interactions in a Cycles document
  
 ### Designing
- * Document the Story (see projects)
+ * Document the Story (see https://github.com/api-tool-kit/company/blob/master/assets/company-story.md)
  * Diagram the Flow - https://WebSequenceDiagrams.com
  * Describe the API w/ ALPS - http://alps.io/spec/drafts/draft-01.html
 
 ### Building
  * Sketch - https://app.apiary.io
  * Prototype - https://app.swaggerhub.com/home
- * Build (NodeJS & DARRT - see projects)
+ * Build (NodeJS & DARRT) - https://github.com/mamund/api-starter
 
 ### Releasing
  * Test - https://www.postman.com/ 
