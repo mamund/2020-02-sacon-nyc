@@ -8,6 +8,9 @@ Here's the landing page for this workshop at the O'Reilly SACon web site: https:
 #### The Book
 This workshop is based on the upcoming eponymous book from Pragmatic Publishing. You can download excerpts and sign up for the early release project at the book's home page here: https://pragprog.com/book/maapis/design-and-build-great-web-apis
 
+#### Starter Project
+All the code projects in this workshop are creawted from a "base" starter project. You can COPY/CLONE that project for your own use here: https://github.com/mamund/api-starter
+
 ## General Topic Outline
 Below is the big-picture outline of the morning workshop. We'll see working examples of each step in the process along with exerecises for select parts of the outline.
 
