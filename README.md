@@ -17,7 +17,7 @@ Below is the big-picture outline of the morning workshop. We'll see working exam
 ### Principles
  * API-First
  * HTTP-Web-REST
- * Record Interactions in a Cycles document
+ * Modeling Interactions
  
 ### Designing
  * Document the Story (see https://github.com/api-tool-kit/company/blob/master/assets/company-story.md)
