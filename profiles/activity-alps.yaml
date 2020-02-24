@@ -1,0 +1,83 @@
+alps:
+  version: '1.0'
+  description: ALPS document for BigCo Activity API
+  
+  descriptors:
+    - id: home
+      type: safe
+      returns: '#activity'
+  
+    - id: listActivity
+      type: safe
+      returns: '#activity'
+  
+    - id: filterActivity
+      type: safe
+      returns: '#activity'
+      descriptors:
+        - href: '#activityType'
+        - href: '#status'
+        - href: '#companyId'
+        - href: '#accountId'
+  
+    - id: getActivity
+      type: safe
+      returns: '#activity'
+      descriptors:
+        - href: '#id'
+  
+    - id: createActivity
+      type: unsafe
+      returns: '#activity'
+      descriptors:
+        - href: '#id'
+        - href: '#status'
+        - href: '#activityType'
+        - href: '#companyId'
+        - href: '#accountId'
+        - href: '#dateScheduled'
+        - href: '#notes'
+  
+    - id: updateActivity
+      type: idempotent
+      returns: '#activity'
+      descriptors:
+        - href: '#id'
+        - href: '#status'
+        - href: '#activityType'
+        - href: '#companyId'
+        - href: '#accountId'
+        - href: '#dateScheduled'
+        - href: '#notes'
+  
+    - id: statusActivity
+      type: idemponent
+      returns: '#activity'
+      descriptors:
+        - href: '#id'
+        - href: '#status'
+  
+    - id: account
+      type: semantic
+      descriptors:
+        - id: id
+          type: semantic
+        - id: status
+          type: semantic
+          text: 'suspended, pending, active, closed'
+        - id: activityType
+          type: semantic
+          text: 'email, inperson, phone, letter'
+        - id: companyId
+          type: semantic
+        - id: accountId
+          type: semantic
+        - id: notes
+          type: semantic
+        - id: dateScheduled
+          type: semantic
+        - id: dateCreated
+          type: semantic
+        - id: dateUpdated
+          type: semantic
+

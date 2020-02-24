@@ -1,0 +1,47 @@
+alps:
+  version: '1.0'
+  description: ALPS document for BigCo Credit Check API
+  
+  descriptors:
+    - id: home
+      type: safe
+      returns: '#ratingItem'
+  
+    - id: creditCheckHistory
+      type: safe
+      returns: '#ratingItem'
+  
+    - id: creditCheckFilter
+      type: safe
+      returns: '#ratingItem'
+      descriptors:
+        - href: '#companyName'
+  
+    - id: creditCheckItem
+      type: safe
+      returns: '#ratingItem'
+      descriptors:
+        - href: '#id'
+  
+    - id: creditCheckForm
+      type: unsafe
+      returns: '#ratingItem'
+      descriptors:
+        - href: '#id'
+        - href: '#companyName'
+        - href: '#ratingValue'
+  
+    - id: ratingItem
+      type: semantic
+      descriptors:
+        - id: id
+          type: semantic
+        - id: companyName
+          type: semantic
+        - id: ratingValue
+          type: semantic
+        - id: dateCreated
+          type: semantic
+        - id: dateUpdated
+          type: semantic
+

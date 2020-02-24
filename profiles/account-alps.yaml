@@ -1,0 +1,91 @@
+alps:
+  version: '1.0'
+  description: ALPS document for BigCo Account API
+  
+  descriptors:
+    - id: home
+      type: safe
+      returns: '#account'
+      
+    - id: listAccounts
+      type: safe
+      returns: '#account'
+    
+    - id: filterAccounts
+      type: safe
+      returns: '#account'
+      descriptors:
+        - href: '#division'
+        - href: '#status'
+    
+    - id: readAccount
+      type: safe
+      returns: '#account'
+      descriptors:
+        - href: '#id'
+    
+    - id: createAccount
+      type: unsafe
+      returns: '#account'
+      descriptors:
+        - href: '#id'
+        - href: '#status'
+        - href: '#division'
+        - href: '#companyId'
+        - href: '#spendingLimit'
+        - href: '#discountPercentage'
+    
+    - id: editAccount
+      type: idempotent
+      returns: '#account'
+      descriptors:
+        - href: '#id'
+        - href: '#status'
+        - href: '#division'
+        - href: '#companyId'
+        - href: '#spendingLimit'
+        - href: '#discountPercentage'
+    
+    - id: removeAccount
+      type: idempotent
+      returns: '#account'
+      descriptors:
+        - href: '#id'
+    
+    - id: updateAccountLimits
+      type: idempotent
+      returns: '#account'
+      descriptors:
+        - href: '#id'
+        - href: '#spendingLimits'
+        - href: '#discountPercentage'
+    
+    - id: setAccountStatus
+      type: idemponent
+      returns: null
+      descriptors:
+        - href: '#id'
+        - href: '#status'
+    
+    - id: account
+      type: semantic
+      descriptors:
+        - id: id
+          type: semantic
+        - id: status
+          type: semantic
+          text: 'suspended, pending, active, closed'
+        - id: division
+          type: semantic
+          text: 'DryGoods, Hardware, Software, Grocery, Pharmacy, Military'
+        - id: companyId
+          type: semantic
+        - id: spendingLimit
+          type: semantic
+        - id: discountPercentage
+          type: semantic
+        - id: dateCreated
+          type: semantic
+        - id: dateUpdated
+          type: semantic
+

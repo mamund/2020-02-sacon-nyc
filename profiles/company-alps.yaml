@@ -1,0 +1,91 @@
+alps:
+  version: '1.0'
+  description: ALPS document for BigCo Company API
+  
+  descriptors:
+    - id: home
+      type: safe
+      returns: '#company'
+  
+    - id: listCompanies
+      type: safe
+      returns: '#company'
+  
+    - id: filterCompanies
+      type: safe
+      returns: '#company'
+      descriptors:
+        - href: '#companyName'
+        - href: '#country'
+        - href: '#status'
+        - href: '#stateProvince'
+  
+    - id: readCompany
+      type: safe
+      returns: '#company'
+      descriptors:
+        - href: '#id'
+  
+    - id: createCompany
+      type: unsafe
+      returns: '#company'
+      descriptors:
+        - href: '#id'
+        - href: '#status'
+        - href: '#companyName'
+        - href: '#streetAddress'
+        - href: '#city'
+        - href: '#stateProvince'
+        - href: '#postalCode'
+        - href: '#telephone'
+        - href: '#email'
+  
+    - id: updateCompany
+      type: idempotent
+      returns: '#company'
+      descriptors:
+        - href: '#id'
+        - href: '#status'
+        - href: '#companyName'
+        - href: '#streetAddress'
+        - href: '#city'
+        - href: '#stateProvince'
+        - href: '#postalCode'
+        - href: '#telephone'
+        - href: '#email'
+  
+    - id: removeCompany
+      type: idempotent
+      returns: '#company'
+      descriptors:
+        - href: '#id'
+  
+    - id: company
+      type: semantic
+      descriptors:
+        - id: id
+          type: semantic
+        - id: status
+          type: semantic
+          text: 'suspended, pending, active, closed'
+        - id: companyName
+          type: semantic
+        - id: streetAddress
+          type: semantic
+        - id: city
+          type: semantic
+        - id: stateProvince
+          type: semantic
+        - id: postalCode
+          type: semantic
+        - id: country
+          type: semantic
+        - id: telephone
+          type: semantic
+        - id: email
+          type: semantic
+        - id: dateCreated
+          type: semantic
+        - id: dateUpdated
+          type: semantic
+

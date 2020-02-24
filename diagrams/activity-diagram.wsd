@@ -1,0 +1,14 @@
+home -> listActivities:
+listActivities --> home:
+listActivities -> createActivityF:
+createActivityF --> listActivities:
+listActivities -> filterActivitiesF:
+filterActivitiesF --> listActivities:
+listActivities -> readActivity:
+readActivity --> listActivities:
+readActivity -> updateActivityF:
+updateActivityF --> readActivity:
+readActivity -> statusActivityF:
+statusActivityF --> readActivity:
+readActivity -> closeActivityF:
+closeActivityF --> readActivity:

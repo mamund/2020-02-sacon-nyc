@@ -1,0 +1,12 @@
+Home->+List:collection
+List-->-Home:home
+List->+Filter:search(status, country, stateProvince, companyName)
+Filter-->-List:collection
+List->+Read:item(companyId)
+Read-->-List:collection
+Read->+Update:update(companyId, companyName, streetAddress, city, stateProvince, postalCode, country, telephone, email, status)
+Update-->-Read:item(companyId)
+Read->+Delete:remove(companyId)
+Delete-->-List:collection
+List->+Create:create(companyName, streetAddress, city, stateProvince, postalCode, country, telephone, email, status)
+Create-->-List:collection
