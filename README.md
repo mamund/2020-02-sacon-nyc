@@ -79,6 +79,7 @@ While, you can enjoy the workshop without having to do hands-on coding/design wo
    * https://devcenter.heroku.com/articles/heroku-cli
 
 ## Slides
-TK
+You'll find the slides from the day's workshop here: 
+https://github.com/mamund/2020-02-sacon-nyc/tree/master/slides
 
    
